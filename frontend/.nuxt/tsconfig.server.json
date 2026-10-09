@@ -45,7 +45,7 @@
         "../node_modules/@vue/compiler-sfc"
       ],
       "@nuxt/schema": [
-        "../node_modules/nuxt/node_modules/@nuxt/schema"
+        "../node_modules/@nuxt/schema"
       ],
       "defu": [
         "../node_modules/defu"
@@ -67,9 +67,6 @@
       ],
       "nitropack": [
         "../node_modules/nitropack"
-      ],
-      "vite/client": [
-        "../node_modules/vite/client"
       ],
       "nitropack/types": [
         "../node_modules/nitropack/types"
