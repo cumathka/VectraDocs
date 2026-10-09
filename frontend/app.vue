@@ -105,6 +105,48 @@
             </div>
           </div>
 
+          <!-- Premium Showcase -->
+          <div class="showcase-shell pt-16">
+            <div class="showcase-stage">
+              <div class="image-stack">
+                <div class="image-panel image-back"></div>
+                <div class="image-panel image-main"></div>
+                <div class="image-panel image-front"></div>
+              </div>
+
+              <div class="floating-card profile-card">
+                <div class="profile-header">
+                  <div class="avatar-ring">
+                    <div class="avatar">AI</div>
+                  </div>
+                  <div>
+                    <p class="eyebrow">Executive Team</p>
+                    <h4>Elena Foster</h4>
+                  </div>
+                </div>
+                <div class="mini-metric">
+                  <span>Trust score</span>
+                  <strong>99.2%</strong>
+                </div>
+              </div>
+
+              <div class="floating-card file-card">
+                <div class="file-topline">
+                  <span class="file-dot green"></span>
+                  <span class="file-dot amber"></span>
+                  <span class="file-dot red"></span>
+                </div>
+                <div class="file-body">
+                  <div class="file-icon">PDF</div>
+                  <div>
+                    <p>Q3 Strategy Brief</p>
+                    <small>Indexed • Secure</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Feature Cards Grid -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-16 text-left">
             <div class="glass-card p-8 rounded-3xl transition duration-300 group">
