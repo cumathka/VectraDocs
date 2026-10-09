@@ -1,3 +1,5 @@
+import { defineNuxtConfig } from 'nuxt/config'
+
 export default defineNuxtConfig({
   ssr: false, // SPA mode for easy static deployment on Vercel / Netlify
   devtools: { enabled: true },
