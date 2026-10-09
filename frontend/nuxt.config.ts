@@ -1,7 +1,10 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  ssr: false, // SPA mode for easy static deployment on Vercel / Netlify
+  ssr: false,
+  nitro: {
+    preset: 'vercel'
+  },
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   app: {
