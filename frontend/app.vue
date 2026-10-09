@@ -44,133 +44,104 @@
       <!-- 1. LANDING VIEW -->
       <div v-if="currentTab === 'landing'" class="space-y-32 py-16">
         <!-- Hero Section -->
-        <section class="max-w-6xl mx-auto px-6 text-center space-y-8 pt-8">
-          <div class="inline-flex items-center space-x-2.5 bg-emerald-950/40 border border-emerald-500/30 px-4 py-1.5 rounded-full text-xs text-emerald-300 shadow-lg shadow-emerald-950/50 backdrop-blur-md animate-float">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-            <span class="font-medium tracking-wide">Enterprise Privacy-First Document Intelligence</span>
-          </div>
+        <section class="max-w-7xl mx-auto px-6 pt-10 pb-6">
+          <div class="corp-hero">
+            <div class="corp-copy">
+              <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-slate-300 px-4 py-2 rounded-full text-[11px] font-semibold tracking-[0.18em] uppercase shadow-lg shadow-slate-950/30">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Strategy • Design • Technology
+              </div>
 
-          <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white leading-[1.05]">
-            Secure Documents & <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">Contextual AI RAG</span>
-          </h1>
+              <h1 class="text-5xl md:text-6xl lg:text-7xl font-black tracking-[-0.06em] text-white leading-[0.94] mt-8">
+                We build <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-sky-400">clarity</span>
+                for ambitious brands.
+              </h1>
 
-          <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed font-normal">
-            The professional document management platform built with strict multi-tenant isolation, zero data leakage guarantees, and verifiable source-backed AI answers.
-          </p>
+              <p class="text-lg text-slate-300 max-w-xl mt-6 leading-relaxed">
+                We help growing companies turn complex ideas into elegant digital experiences, sharper positioning, and higher-converting customer journeys.
+              </p>
 
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <button @click="currentTab = 'dashboard'" class="w-full sm:w-auto bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold px-8 py-4 rounded-2xl transition duration-300 shadow-2xl shadow-emerald-600/30 flex items-center justify-center space-x-3 text-sm tracking-wide">
-              <span>Explore Workspace</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-            </button>
-            <button @click="currentTab = 'ai-chat'" class="w-full sm:w-auto bg-slate-900/80 hover:bg-slate-800 text-slate-200 font-semibold px-8 py-4 rounded-2xl border border-slate-800 transition duration-300 text-sm tracking-wide backdrop-blur-md">
-              Test AI RAG Sandbox
-            </button>
-          </div>
+              <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                <button @click="currentTab = 'dashboard'" class="bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-white font-semibold px-7 py-3.5 rounded-2xl shadow-xl shadow-emerald-500/20 transition duration-300">
+                  Start a project
+                </button>
+                <button @click="currentTab = 'documents'" class="bg-slate-900/70 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold px-7 py-3.5 rounded-2xl transition duration-300">
+                  View our work
+                </button>
+              </div>
 
-          <!-- Interactive UI Preview Mockup Card -->
-          <div class="pt-12">
-            <div class="glass-card rounded-3xl p-4 md:p-6 shadow-2xl border border-slate-800/80 max-w-5xl mx-auto text-left relative overflow-hidden group">
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500"></div>
-              <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-4">
-                <div class="flex items-center space-x-2">
-                  <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
-                  <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
-                  <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
-                  <span class="ml-2 text-xs font-mono text-slate-500">vectradocs.com/app/workspace</span>
-                </div>
-                <div class="flex items-center space-x-2 text-xs text-emerald-400 bg-emerald-950/60 border border-emerald-800/60 px-3 py-1 rounded-full">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                  <span>Tenant Isolation Active</span>
+              <div class="brand-row mt-10">
+                <span>Trusted by</span>
+                <div class="brand-logos">
+                  <span>Northstar</span>
+                  <span>Velora</span>
+                  <span>Omnia</span>
+                  <span>NovaPeak</span>
                 </div>
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/60 space-y-2">
-                  <span class="text-[10px] uppercase font-bold tracking-wider text-slate-500">Active Tenant</span>
-                  <p class="text-sm font-semibold text-white">Acme Corporation</p>
-                  <p class="text-xs text-emerald-400">142 Documents Indexed</p>
+            </div>
+
+            <div class="corp-visual">
+              <div class="visual-frame">
+                <div class="visual-grid"></div>
+
+                <div class="floating-window left-window">
+                  <div class="window-header">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="window-body">
+                    <div class="chart-bars">
+                      <i style="height: 38%"></i>
+                      <i style="height: 56%"></i>
+                      <i style="height: 72%"></i>
+                      <i style="height: 64%"></i>
+                      <i style="height: 90%"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/60 space-y-2">
-                  <span class="text-[10px] uppercase font-bold tracking-wider text-slate-500">Vector Engine</span>
-                  <p class="text-sm font-semibold text-white">Qdrant Cloud / Local</p>
-                  <p class="text-xs text-cyan-400">Hybrid Semantic Search</p>
+
+                <div class="floating-window center-window">
+                  <div class="project-card">
+                    <div class="project-thumb"></div>
+                    <div class="project-meta">
+                      <p>Brand system</p>
+                      <strong>Elara Labs</strong>
+                    </div>
+                  </div>
                 </div>
-                <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/60 space-y-2">
-                  <span class="text-[10px] uppercase font-bold tracking-wider text-slate-500">Security Audit</span>
-                  <p class="text-sm font-semibold text-white">Zero Leakage Verified</p>
-                  <p class="text-xs text-teal-400">AES-256 Encryption</p>
+
+                <div class="insight-card">
+                  <small>Performance</small>
+                  <strong>+184%</strong>
+                  <span>Qualified pipeline growth</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Premium Showcase -->
-          <div class="showcase-shell pt-16">
-            <div class="showcase-stage">
-              <div class="image-stack">
-                <div class="image-panel image-back"></div>
-                <div class="image-panel image-main"></div>
-                <div class="image-panel image-front"></div>
-              </div>
-
-              <div class="floating-card profile-card">
-                <div class="profile-header">
-                  <div class="avatar-ring">
-                    <div class="avatar">AI</div>
-                  </div>
-                  <div>
-                    <p class="eyebrow">Executive Team</p>
-                    <h4>Elena Foster</h4>
-                  </div>
-                </div>
-                <div class="mini-metric">
-                  <span>Trust score</span>
-                  <strong>99.2%</strong>
-                </div>
-              </div>
-
-              <div class="floating-card file-card">
-                <div class="file-topline">
-                  <span class="file-dot green"></span>
-                  <span class="file-dot amber"></span>
-                  <span class="file-dot red"></span>
-                </div>
-                <div class="file-body">
-                  <div class="file-icon">PDF</div>
-                  <div>
-                    <p>Q3 Strategy Brief</p>
-                    <small>Indexed • Secure</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Feature Cards Grid -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-16 text-left">
             <div class="glass-card p-8 rounded-3xl transition duration-300 group">
               <div class="w-12 h-12 rounded-2xl bg-emerald-950/80 border border-emerald-800/60 flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition duration-300 shadow-lg">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 21V7m8 14V3m-6 18v-8M4 21h16"/></svg>
               </div>
-              <h3 class="text-xl font-bold text-white mb-3">Multi-Tenant Isolation</h3>
-              <p class="text-slate-400 text-sm leading-relaxed">Strict server-side scoping ensures organization boundaries are mathematically enforced across all database queries and vector indexes.</p>
+              <h3 class="text-xl font-bold text-white mb-3">Brand Strategy</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">Clear positioning, sharper value narratives, and messaging systems built to move decision-makers forward.</p>
             </div>
 
             <div class="glass-card p-8 rounded-3xl transition duration-300 group">
               <div class="w-12 h-12 rounded-2xl bg-cyan-950/80 border border-cyan-800/60 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition duration-300 shadow-lg">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
               </div>
-              <h3 class="text-xl font-bold text-white mb-3">Source-Backed RAG</h3>
-              <p class="text-slate-400 text-sm leading-relaxed">Never hallucinate. Every AI answer is directly referenced with document titles, page numbers, and exact contextual fragments.</p>
+              <h3 class="text-xl font-bold text-white mb-3">Product Experience</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">Interface systems designed to feel premium, intuitive, and conversion-ready from the first touchpoint.</p>
             </div>
 
             <div class="glass-card p-8 rounded-3xl transition duration-300 group">
               <div class="w-12 h-12 rounded-2xl bg-teal-950/80 border border-teal-800/60 flex items-center justify-center text-teal-400 mb-6 group-hover:scale-110 transition duration-300 shadow-lg">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
               </div>
-              <h3 class="text-xl font-bold text-white mb-3">Flexible Storage</h3>
-              <p class="text-slate-400 text-sm leading-relaxed">Store documents locally during development, or connect MinIO, AWS S3 buckets, and custom enterprise object stores seamlessly.</p>
+              <h3 class="text-xl font-bold text-white mb-3">Growth Systems</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">Measurement-driven launches built with storytelling, performance data, and a scalable design foundation.</p>
             </div>
           </div>
         </section>
